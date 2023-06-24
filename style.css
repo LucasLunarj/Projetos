@@ -1,12 +1,23 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --text-color: white;
+  --background-color:url(./assets/bg-mobile.jpg);
+  --stroke-color:rgba(255, 255, 255, 0.5);
+}
+
+.light{
+--text-color:black;
+--background-color:url(assets/bg-mobile-light.jpg);
+}
+
 body {
-  background-image: url(./assets/bg-mobile.jpg);
+  background-image: var(--background-color);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -19,36 +30,39 @@ body {
 #container {
   height: 712px;
   width: 360px;
-  border: 1px solid red;
+  padding-top: 56px;
+  /* border: 1px solid red; */
+
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
 .profile {
   width: 360px;
   height: 192px;
-  /* padding: 24px; */
+  padding: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.profile img{
+.profile img {
   width: 112px;
 }
 
-.profile p{
+.profile p {
   font-weight: 500;
-  line-height: 50px;  
-  color: #fff;
+  line-height: 50px;
+  color: var(--text-color);
 }
 
-.switch{
+.switch {
   height: 40;
   width: 64;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,20 +82,38 @@ body {
 .links button {
   width: 312px;
   height: 56px;
-  color: #fff;
+  color: var(--text-color);
+
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-}
+  font-weight: 500;
 
-.social-links{
+}
+.links button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid var(--text-color);
+
+}
+.social-links {
   height: 88px;
   width: 360px;
   padding: 24px;
-  
+
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.social-links img:hover{
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 50%;
+}
+.social-links img {
+  display: flex;
 }
 
 footer {
