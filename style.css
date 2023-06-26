@@ -7,19 +7,22 @@
 }
 :root{
   --text-color: white;
-  --background-color:url(./assets/bg-mobile.jpg);
+  --background-image:url(./assets/bg-mobile.jpg);
   --stroke-color:rgba(255, 255, 255, 0.5);
+  --button-background:rgba(255, 255, 255, 0.1);
 }
 
 .light{
 --text-color:black;
---background-color:url(assets/bg-mobile-light.jpg);
+--background-image:url(assets/bg-mobile-light.jpg);
+--stroke-color:rgba(0, 0, 0, 0.50);
+--button-background: rgba(0, 0, 0, 0.05);
 }
 
 body {
-  background-image: var(--background-color);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; 
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -84,10 +87,10 @@ body {
   height: 56px;
   color: var(--text-color);
 
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border: 1.5px solid var(--stroke-color);
   border-radius: 8px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background:var(--button-background) ;
   backdrop-filter: blur(4px);
   font-weight: 500;
 
