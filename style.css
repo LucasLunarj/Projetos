@@ -10,6 +10,8 @@
   --background-image:url(./assets/bg-mobile.jpg);
   --stroke-color:rgba(255, 255, 255, 0.5);
   --button-background:rgba(255, 255, 255, 0.1);
+  --social-link-hover:rgba(255, 255, 255, 0.20);
+  --switch-image:url(assets/moon-star.svg);
 }
 
 .light{
@@ -17,6 +19,8 @@
 --background-image:url(assets/bg-mobile-light.jpg);
 --stroke-color:rgba(0, 0, 0, 0.50);
 --button-background: rgba(0, 0, 0, 0.05);
+--social-link-hover:rgba(0, 0, 0, 0.10);
+--switch-image:url(assets/sun.svg);
 }
 
 body {
@@ -41,6 +45,7 @@ body {
   justify-content: center;
 }
 
+/*Profile*/
 .profile {
   width: 360px;
   height: 192px;
@@ -61,7 +66,7 @@ body {
   line-height: 50px;
   color: var(--text-color);
 }
-
+/* Switch */
 .switch {
   height: 40;
   width: 64;
@@ -70,7 +75,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+.switch button{
+  height: 32px;
+  width: 32px;
+  background: white var(--switch-image) no-repeat center;
+  border: none;
 
+
+  cursor: pointer;
+  border-radius: 50%;
+}
+.switch button:hover{
+
+}
+.switch span{
+  width: 64px;
+  height: 24px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.1);
+}
+/*Links*/
 .links {
   width: 360px;
   height: 320px;
@@ -100,25 +124,34 @@ body {
   border: 1.5px solid var(--text-color);
 
 }
+
+/* Social Links */
 .social-links {
   height: 88px;
   width: 360px;
   padding: 24px;
+  color: var(--text-color);
 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.social-links img:hover{
+.social-links a:hover{
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: var(--social-link-hover);
   border-radius: 50%;
 }
-.social-links img {
+.social-links a {
   display: flex;
+  
+}
+.social-links a ion-icon{
+  color: var(--text-color);
+ 
 }
 
+/* Footer */
 footer {
   color: white;
 
