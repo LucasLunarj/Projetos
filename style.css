@@ -143,6 +143,7 @@ box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
 .links button:hover {
   background: rgba(255, 255, 255, 0.5);
   border: 1.5px solid var(--text-color);
+  cursor: pointer;
 
 }
 
@@ -162,6 +163,7 @@ box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
   padding: 16px;
   background-color: var(--social-link-hover);
   border-radius: 50%;
+  
 }
 .social-links a {
   display: flex;
