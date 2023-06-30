@@ -28,20 +28,18 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-height: 100vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 #container {
   height: 712px;
   width: 100%;
   padding-top: 56px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,38 +184,41 @@ footer {
 /* desktop */
 
 @media (min-width: 700px) {
-  :root{
+  :root {
     --background-image: url(assets/bg-desktop-dark.jpg);
   }
 
-  .light{
+  .light {
     --background-image: url(assets/bg-desktop-light.jpg);
   }
 
   body {
     background-image: var(--background-image);
   }
-.profile{
-  width:588px ;
-  height: 192px;
-}
-.links{
-  width: 588px;
-  height: 320px;
-  padding: 24px;
-  gap: 16px;
-}
-.links button{
-  width: 540px;
-  height: 56px;
- 
-}
-.social-links{
-  width: 588px;
-  height: 88px;
-}
-.social-links ion-icon{
-  width: 40px;
-  height: 40px;
-}
+  .profile {
+    width: 588px;
+    height: 192px;
+  }
+  .links {
+    width: 588px;
+    height: 320px;
+    padding: 24px;
+    gap: 16px;
+  }
+  .links button {
+    width: 540px;
+    height: 56px;
+  }
+  .social-links {
+    width: 588px;
+    height: 88px;
+  }
+  .social-links ion-icon {
+    width: 40px;
+    height: 40px;
+  }
+  footer{
+    width: 588px;
+    height: 72px;
+  }
 }
