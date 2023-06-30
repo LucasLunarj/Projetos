@@ -28,17 +28,20 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 #container {
   height: 712px;
   width: 100%;
   padding-top: 56px;
-
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +128,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .links button {
@@ -200,10 +204,13 @@ footer {
 .links{
   width: 588px;
   height: 320px;
+  padding: 24px;
+  gap: 16px;
 }
 .links button{
   width: 540px;
   height: 56px;
+ 
 }
 .social-links{
   width: 588px;
