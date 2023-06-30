@@ -5,28 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --text-color: white;
-  --background-image:url(./assets/bg-mobile.jpg);
-  --stroke-color:rgba(255, 255, 255, 0.5);
-  --button-background:rgba(255, 255, 255, 0.1);
-  --social-link-hover:rgba(255, 255, 255, 0.20);
-  --switch-image:url(assets/moon-star.svg);
+  --background-image: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --button-background: rgba(255, 255, 255, 0.1);
+  --social-link-hover: rgba(255, 255, 255, 0.2);
+  --switch-image: url(assets/moon-star.svg);
 }
 
-.light{
---text-color:black;
---background-image:url(assets/bg-mobile-light.jpg);
---stroke-color:rgba(0, 0, 0, 0.50);
---button-background: rgba(0, 0, 0, 0.05);
---social-link-hover:rgba(0, 0, 0, 0.10);
---switch-image:url(assets/sun.svg);
+.light {
+  --text-color: black;
+  --background-image: url(assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --button-background: rgba(0, 0, 0, 0.05);
+  --social-link-hover: rgba(0, 0, 0, 0.1);
+  --switch-image: url(assets/sun.svg);
 }
 
 body {
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-position: top center; 
+  background-position: top center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -36,13 +36,13 @@ body {
 
 #container {
   height: 712px;
-  width: 360px;
+  width: 100%;
   padding-top: 56px;
-  /* border: 1px solid red; */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /*Profile*/
@@ -77,10 +77,10 @@ body {
   justify-content: center;
   align-items: center; */
 }
-.switch button{
+.switch button {
   height: 32px;
   width: 32px;
-  
+
   background: white var(--switch-image) no-repeat center;
   border: none;
 
@@ -92,12 +92,12 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
-.switch button:hover{
-border: solid 8px rgba(255, 255, 255, 0.20);
-padding: 8px;
-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+.switch button:hover {
+  border: solid 8px rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
-.switch span{
+.switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -107,13 +107,13 @@ box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
   background: var(--button-background);
 }
 
-.light .switch button{
+.light .switch button {
   left: 0;
   right: initial;
 }
-.light .switch button:hover{
+.light .switch button:hover {
   padding: 8px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 /*Links*/
 .links {
@@ -135,16 +135,14 @@ box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
   border: 1.5px solid var(--stroke-color);
   border-radius: 8px;
 
-  background:var(--button-background) ;
+  background: var(--button-background);
   backdrop-filter: blur(4px);
   font-weight: 500;
-
 }
 .links button:hover {
   background: rgba(255, 255, 255, 0.5);
   border: 1.5px solid var(--text-color);
   cursor: pointer;
-
 }
 
 /* Social Links */
@@ -159,26 +157,60 @@ box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
   justify-content: space-evenly;
   align-items: center;
 }
-.social-links a:hover{
+.social-links a:hover {
   padding: 16px;
   background-color: var(--social-link-hover);
   border-radius: 50%;
-  
 }
 .social-links a {
   display: flex;
-  
 }
-.social-links a ion-icon{
+.social-links a ion-icon {
   color: var(--text-color);
- 
 }
 
 /* Footer */
 footer {
   color: var(--text-color);
+  padding: 24px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* desktop */
+
+@media (min-width: 700px) {
+  :root{
+    --background-image: url(assets/bg-desktop-dark.jpg);
+  }
+
+  .light{
+    --background-image: url(assets/bg-desktop-light.jpg);
+  }
+
+  body {
+    background-image: var(--background-image);
+  }
+.profile{
+  width:588px ;
+  height: 192px;
+}
+.links{
+  width: 588px;
+  height: 320px;
+}
+.links button{
+  width: 540px;
+  height: 56px;
+}
+.social-links{
+  width: 588px;
+  height: 88px;
+}
+.social-links ion-icon{
+  width: 40px;
+  height: 40px;
+}
 }
