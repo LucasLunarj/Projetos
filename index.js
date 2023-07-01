@@ -1,18 +1,18 @@
 let profilePicture = document.querySelector('.profile img');
-console.log(profilePicture);
+const html = document.querySelector('.light');
 const buttonClick = document.querySelector(".switch button");
 let switchButton = true
-buttonClick.addEventListener("click", function(){
-if (switchButton === true) {
-    document.querySelector("html").classList.add('light');
-    switchButton = false;
-    document.querySelector('.profile img').src = "assets/avatar.png"
-    console.log(switchButton)
-} else {
-    document.querySelector("html").classList.remove('light');
-    document.querySelector('.profile img').src = "assets/avatar.png"
-    switchButton = true
-    console.log(switchButton)
-}
+
+buttonClick.addEventListener("click", function () {
+    html.classList.toggle('light')
+    
+    if (switchButton === true) {
+        switchButton = false;
+        profilePicture.setAttribute("src", 'assets/avatar.png');
+    } else {
+        profilePicture.setAttribute("src", 'assets/avatar-light.png');
+        switchButton = true;
+
+    }
 
 })
