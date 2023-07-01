@@ -10,7 +10,7 @@ buttonClick.addEventListener("click", function () {
         switchButton = false;
         profilePicture.setAttribute("src", './assets/avatar.png');
     } else {
-        profilePicture.setAttribute("src", './assets/avatarlight.png');
+        profilePicture.setAttribute("src", './assets/avatarLight.png');
         switchButton = true;
 
     }
