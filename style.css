@@ -180,7 +180,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
+footer a{
+  color: var(--text-color);
+}
 /* desktop */
 
 @media (min-width: 700px) {
