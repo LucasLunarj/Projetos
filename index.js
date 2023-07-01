@@ -8,7 +8,7 @@ buttonClick.addEventListener("click", function () {
     
     if (switchButton === true) {
         switchButton = false;
-        profilePicture.setAttribute("src", './assets/avatar.png');
+        profilePicture.setAttribute("src", './assets/Avatar.png');
     } else {
         profilePicture.setAttribute("src", './assets/avatarLight.png');
         switchButton = true;
