@@ -12,7 +12,7 @@ buttonClick.addEventListener("click", function () {
         console.log(profilePicture);
     } else {
         console.log(profilePicture);
-        profilePicture.setAttribute("src", './assets/avatarLight.jpg');
+        profilePicture.setAttribute("src", './assets/avatar2.jpg');
         switchButton = true;
 
     }
