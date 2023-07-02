@@ -8,11 +8,11 @@ buttonClick.addEventListener("click", function () {
     
     if (switchButton === true) {
         switchButton = false;
-        profilePicture.setAttribute("src", './assets/avatar.jpg');
+        profilePicture.setAttribute("src", './assets/avatar.png');
         console.log(profilePicture);
     } else {
         console.log(profilePicture);
-        profilePicture.setAttribute("src", './assets/avatar2.jpg');
+        profilePicture.setAttribute("src", './assets/avatar2.png');
         switchButton = true;
 
     }
