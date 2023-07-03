@@ -107,10 +107,9 @@ body {
   border-radius: 9999px;
   background: var(--button-background);
 }
+ .switch .light button {
+animation: slide 0.4s forwards;
 
-.light .switch button {
-  left: 0;
-  right: initial;
 }
 .light .switch button:hover {
   padding: 8px;
@@ -222,5 +221,17 @@ footer a{
   footer{
     width: 588px;
     height: 72px;
+  }
+}
+
+/* animation */
+
+@keyframes slide {
+  from{
+    left:0;
+  }
+
+  to{
+    left: 50%;
   }
 }
