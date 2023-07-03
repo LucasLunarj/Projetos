@@ -1,5 +1,5 @@
 let profilePicture = document.querySelector('.profile img');
-const html = document.querySelector('.light');
+const html = document.querySelector('html');
 const buttonClick = document.querySelector(".switch button");
 let switchButton = true
 

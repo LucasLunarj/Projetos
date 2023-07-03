@@ -92,6 +92,8 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
   border-radius: 50%;
+
+  animation: slide-out 0.2s;
 }
 .switch button:hover {
   border: solid 8px rgba(255, 255, 255, 0.2);
@@ -109,8 +111,7 @@ body {
 }
 
 .light .switch button {
-  left: 0;
-  right: initial;
+  animation: slide-in 0.4s forwards;
 }
 .light .switch button:hover {
   padding: 8px;
@@ -222,5 +223,23 @@ footer a{
   footer{
     width: 588px;
     height: 72px;
+  }
+}
+
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    right: 50%;
+  }
+}
+
+@keyframes slide-out{
+  from{
+    left:50%
+  }
+  to{
+    left: 0;
   }
 }
