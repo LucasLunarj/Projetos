@@ -109,9 +109,14 @@ body {
   border-radius: 9999px;
   background: var(--button-background);
 }
+ .switch .light button {
+animation: slide 0.4s forwards;
 
+<<<<<<< HEAD
 .light .switch button {
   animation: slide-in 0.4s forwards;
+=======
+>>>>>>> 06bfdddb5945cc6d65f64a051fa808cf053f4049
 }
 .light .switch button:hover {
   padding: 8px;
@@ -226,6 +231,7 @@ footer a{
   }
 }
 
+<<<<<<< HEAD
 @keyframes slide-in{
   from{
     left: 0;
@@ -243,3 +249,16 @@ footer a{
     left: 0;
   }
 }
+=======
+/* animation */
+
+@keyframes slide {
+  from{
+    left:0;
+  }
+
+  to{
+    left: 50%;
+  }
+}
+>>>>>>> 06bfdddb5945cc6d65f64a051fa808cf053f4049
